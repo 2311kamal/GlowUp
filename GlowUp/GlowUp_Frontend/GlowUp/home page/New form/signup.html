@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <div class="signup-container">
+    <h1>Signup</h1>
+    <p>Choose your role:</p>
+    <div class="role-options">
+      <button class="role-btn" onclick="redirectToUserSignup()">User</button>
+      <button class="role-btn" onclick="redirectToArchitectSignup()">Architect</button>
+      <a href="../home.html" class="home-btn">Home Page</a>
+    </div>
+  </div>
+
+  <!-- Load user_signup.js or architect_signup.js based on the user's role selection -->
+  <script src="user_signup.js" id="user-signup-script" defer></script>
+  <script src="architect_signup.js" id="architect-signup-script" defer></script>
+</body>
+</html>
